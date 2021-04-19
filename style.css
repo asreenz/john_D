@@ -1,0 +1,529 @@
+@font-face {
+    font-family: Akzidenz-grotesk;
+    src: url("fonts/Akzidenz-grotesk-roman.otf") format("opentype");
+}
+@font-face {
+    font-family: Berthold Akzidenz Grotesk BE;
+    src: url("fonts/Berthold Akzidenz Grotesk BE Extended.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Financier';
+    src: url('fonts/financier-text-test-regular.woff') format('woff');
+  }
+body {
+    background-color: white;
+    overflow:none;
+    overflow-x:hidden;
+    margin:0;
+}
+h1{
+    font-size:2.5rem;
+    font-family: Berthold Akzidenz Grotesk BE;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.footer{
+    width:100vw;
+    /* margin:auto; */
+    text-align:center;
+    padding-top:20px;
+  
+}
+#index3_logo{
+    padding-top:15px;
+}
+#text_index3{
+    color:white;
+}
+#navbar_index3{
+    color:white;
+}
+#index3_demeterpg{
+    color:white;
+}
+#read_index3{
+    color:white;
+}
+#topbar_index3{
+    border-bottom: 1px solid white;
+}
+#index3_verticalline{
+    border-left: 1px solid white;
+}
+#footer_index3{
+    color:white;
+    border-top: 1px solid white;
+
+}
+#line_index3{
+    border-left: 1px solid white;
+}
+#line_index4{
+    border-left: 1px solid white;
+}
+#line_index5{
+    border-left: 1px solid white;
+}
+
+
+#navbar_index6{
+    top:0;
+}
+
+#index4_logo{
+    padding-top:15px;
+}
+#text_index4{
+    color:white;
+}
+#navbar_index4{
+    color:white;
+}
+#index4_demeterpg{
+    color:white;
+}
+#read_index4{
+    color:white;
+}
+#topbar_index4{
+    border-bottom: 1px solid white;
+}
+#index4_verticalline{
+    border-left: 1px solid white;
+}
+#footer_index4{
+    color:white;
+    border: 1px solid white;
+}
+
+#index5_logo{
+    padding-top:15px;
+}
+#text_index5{
+    color:white;
+}
+#navbar_index5{
+    color:white;
+}
+#index5_demeterpg{
+    color:white;
+}
+#read_index5{
+    color:white;
+}
+#topbar_index5{
+    border-bottom: 1px solid white;
+}
+#index5_verticalline{
+    border-left: 1px solid white;
+}
+#footer_index5{
+    color:white;
+    border: 1px solid white;
+}
+/* TOP BAR */
+.top-bar{
+    width:100%;
+    height:50px;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:white;
+    border-bottom: 1px solid black;
+}
+/* NAV BAR */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+li{
+    float:right;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+    font-size:.95rem; 
+    font-family: Akzidenz-grotesk;
+}
+li a:hover{
+    text-decoration: underline;
+}
+.header{
+    float:left;
+    padding-top:7px;
+    padding-left:21px;
+    width:18%;
+    position: fixed;
+    left:0;
+}
+.nav-bar{
+    position: fixed;
+    right:0;
+    padding-right:28px;
+}
+/* HOME PAGE CONTAINER */
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr .25fr;
+    grid-template-areas: 
+    "d a a"
+    "txt a a"
+    ". a a"
+    ". . .";
+    width: 100vw;
+    max-height: 100vh;
+}
+/* .container:after{
+content: "";
+    position: absolute;
+    z-index: -1;
+    top: 1300;
+    bottom: 0;
+    height:120px;
+    left: 50%;
+    border-left: 1px solid black;
+    transform: translate(-50%);
+} */
+.d_img{
+    width:100%;
+    padding-left:30px;
+    padding-top:60px;
+    grid-area: d;
+}
+.a_img{
+    padding-left:175px;
+    width:80%;
+    grid-area: a;
+}
+.text-home{
+    font-size:2.3rem;
+    margin-top:0;
+    padding-top:48px;
+    padding-left:30px;
+    grid-area: txt;
+    font-weight: lighter;
+    font-family: Berthold Akzidenz Grotesk BE;
+}
+
+.container_bottom{
+    display:grid;
+    justify-items: center;
+    max-width:100vw;
+    max-height:100vh;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". . ."
+    ". d ."
+    ". pg2 ."
+    ". line ."
+    ". read .";
+}
+.demeter_img{
+    width:15%;
+    padding-top:30px;
+    grid-area: d;
+    justify-self: center;
+    transform:translate(-50%);
+}
+.about_vertical_bottom{
+    position:relative;
+    top:-.5px;
+    border-left: 1px solid black;
+    height:60px;
+    bottom:100px;
+    left:720px;
+    z-index:-1111111;
+
+}
+.bottom_pg{
+    grid-area:pg2;
+    font-size:2.75rem;
+    text-align: center;
+    font-size:2.4rem;
+    font-weight: lighter;
+    font-family:Financier;
+}
+.vertical-line{
+    border-left: 1px solid black;
+    height:60px;
+    transform: translateX(50%);
+    transform: translateY(50%);
+    grid-area: line;
+}
+.home_vertical-line{
+    border-left: 1px solid black;
+    height:80px;
+    z-index:-1;
+    position:relative;
+
+    transform: translate(50%);
+}
+/* .home_horizontal-line{
+    border-left: 2px solid black;
+    z-index:-1;
+    transform: translate(50%);
+} */
+hr{
+    width:5%;
+    color:black;
+    margin-left:800px;
+}
+.read{
+    grid-area: read;
+    font-size:1rem;
+    font-family:Akzidenz-grotesk;
+}
+/* ABOUT PAGE */
+
+/* TOP CONTAINER */
+
+.about_container_top{
+    display:flex;
+    flex-direction: column;
+    width:100vw;
+    height:590px;
+    align-items:center;
+    justify-content: center;
+    padding-top:60px;
+}
+.about_line{
+    border-left:1px solid black;
+    transform:translate(50%);
+    top:50px;
+    position:relative;
+    height:80px;
+
+}
+.d_about_img{
+    width:80%;
+      height:95%;
+      padding-top:130px;
+      padding-left:100px;
+  
+}
+.a_about_img{
+    grid-area:ay;
+    width:80%;
+    padding-left:40px;
+    padding-top:145px;
+    justify-self:start;
+}
+.about_top{
+    font-size:3rem;
+    grid-area:about;
+    transform: translate(-50%);
+    text-align:center;
+    padding-top:350px;
+    margin-top:90px;
+    margin-bottom:0;
+    font-family: Berthold Akzidenz Grotesk BE;
+}
+/* MIDDLE CONTAINER */
+.about_container_middle{
+    display:flex;
+    flex-direction: column;
+    width:100vw;
+    height:100vh;
+    align-items:center;
+    justify-content: center;
+}
+.about_vertical_line{
+    justify-items: center;
+}
+.demeter_about_img{
+    width:8%;
+    justify-self:center;
+    margin-top:30%;
+}
+.established_pg{
+    grid-area:paragraph;
+    font-size:2.5rem;
+    text-align: center;
+    font-weight: lighter;
+    font-family: financier;
+    margin-top:0;
+    margin-left: 20%;
+    margin-right:20%;
+    margin-bottom:30%;
+    padding-top:30px;
+}
+
+/* BOTTOM CONTAINER */
+.about_container_bottom1{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    height:509px;
+
+}
+.about_container_bottom2{
+    width:100vw;
+    height:100vh;
+    display:flex;
+
+}
+.about_container_bottom:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    height:120px;
+    left: 50%;
+    border-left: 1px solid black;
+    transform: translate(-50%);
+  }
+  .about_container_bottom:after{
+    content: "";
+        position: absolute;
+        z-index: -1;
+        top: 2000;
+        bottom: 0;
+        height:120px;
+        left: 50%;
+        border-left: 1px solid black;
+        transform: translate(-50%);
+    }
+
+.left{
+    width:50%;
+    border-right: .5px thin black;   
+  } 
+.right{
+   width:50%;
+   border-left: .5px solid black;
+  }
+.founder_about{
+    width:80%;
+    padding-top:150px;
+    padding-left:55px;
+   
+}
+.footer-description{
+    border-top: 1px solid black;
+    width:100vw;
+    font-family: Akzidenz-grotesk;
+    padding-top:10px;
+    position:relative;
+    
+
+}
+.about_footer_img{
+    padding-top:30px;
+    width:60%;
+    padding-bottom:20px;
+}
+#about_h1{
+    text-align:left;
+    padding-top:100px;
+    padding-left:33px;
+   
+  }
+#founder_h1{
+    text-align:left;
+    padding-top:100px;
+    padding-left:20px;
+  
+
+}
+#what_we_do{
+    padding-left:37px;
+    padding-right:10px;
+    font-size:1.7rem;
+    font-family: Financier;
+
+} 
+#our_founder{
+    padding-left:25px;
+    padding-right:50px;
+    font-size:1.57rem;
+    font-family: Financier;
+
+
+} 
+
+/* TRANSACTION PAGE */
+
+.transaction_top{
+    font-size:3rem;
+    padding-left:25px;
+    padding-top:150px;
+    padding-bottom:90px;
+    margin:0;
+    font-family: Berthold Akzidenz Grotesk BE;
+}
+.logos_grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    padding-left:40px;
+    padding-bottom:20px;
+    align-items:center;
+    width:94%;
+    
+}
+.container_img{
+    display:flex;
+    width:100%;
+    height:100%;
+    mix-blend-mode: multiply;
+}
+.logos{
+    margin:0;
+    height:100%;
+    background-color:#e3e3e3;
+    transition: background-color .5s;
+    border:1px solid grey;
+}
+.logos:hover {
+    background-color: white;
+    
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container{
+        display:grid;
+        grid-template-columns: 30% 10% 60%;
+        grid-template-rows: .5fr 1fr .25fr;
+        grid-template-areas: 
+        "d . ."
+        "txt . a"
+        ". . a";
+    }
+    .text-home{
+        font-size: 2rem;
+    }
+    li a{
+        font-size: .75rem;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
