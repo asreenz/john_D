@@ -1,14 +1,14 @@
 @font-face {
     font-family: Akzidenz-grotesk;
-    src: url("fonts/Akzidenz-grotesk-roman.otf") format("opentype");
+    src: url("Akzidenz-grotesk-roman.otf") format("opentype");
 }
 @font-face {
     font-family: Berthold Akzidenz Grotesk BE;
-    src: url("fonts/Berthold Akzidenz Grotesk BE Extended.otf") format("opentype");
+    src: url("Berthold Akzidenz Grotesk BE Extended.otf") format("opentype");
 }
 @font-face {
     font-family: 'Financier';
-    src: url('fonts/financier-text-test-regular.woff') format('woff');
+    src: url('financier-text-test-regular.woff') format('woff');
   }
 body {
     background-color: white;
